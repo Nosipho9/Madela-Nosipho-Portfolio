@@ -1,0 +1,112 @@
+.home_info{}
+.home_info_bg{
+	background:#fff;
+	margin-top:100px;
+	padding:50px;
+}
+.profile-pic{}
+
+@media only screen and (max-width:768px) { 
+.profile-pic img {width: 100%;}
+}
+.social_profile {
+	margin-top: 20px;
+}
+.social_profile ul{
+list-style: outside none none;
+margin: 0;
+padding: 0;
+text-align: center;
+}
+.social_profile ul li{
+display: inline-block;
+}
+@media only screen and (max-width:480px) { 
+.social_profile ul li{margin:2px;}
+}
+.social_profile ul li a img{width:60px;}
+.social_profile ul li a {
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	transition: all 0.3s ease 0s;
+	margin-right: 10px;
+	color: #333;
+	font-size: 16px;
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	border: 1px solid #eee;
+	border-radius: 30px;
+	transition: 0.3s;
+}
+@media only screen and (max-width:480px) { 
+.social_profile ul li a {margin-right:5px;}
+}
+@media only screen and (max-width:414px) { 
+.social_profile ul li a {width: 35px;height: 35px;line-height: 35px;}
+}
+.social_profile ul li a:hover{
+background:#f75799;
+color:#fff;
+border: 1px solid #f75799;
+}
+.name_title {
+	margin-bottom: 40px;
+	border-bottom: 1px solid #ddd;
+	padding-bottom:20px;
+}
+@media only screen and (max-width:768px) { 
+.name_title {margin-top: 60px;}
+}
+.name_title h1{}
+@media only screen and (max-width:414px) { 
+.name_title h1 {font-size:30px; }
+}
+.name_title h1 span{
+font-weight:700;	
+color:#f75799;
+}
+.name_title h4{margin-bottom:0px;}
+
+
+.info_title {
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 16px;
+}
+.info_title::after {
+	content: "";
+	background: #f75799;
+	height: 2px;
+	width: 45px;
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+
+.basic-info{}
+.basic-info table tr th {
+	color: #333;
+	font-family: montserrat,sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 35px;
+	text-transform: uppercase;
+}
+.contact_info{margin-top:130px;}
+@media only screen and (max-width:480px) { 
+.basic-info table tr {
+	margin-bottom: 10px;
+	display: inline-block;
+}
+.contact_info{margin-top:50px;}
+}
+.basic-info table tr th{width:120px;}
+}
+
+@media only screen and (max-width:768px) { 
+.contact_info{margin-top:60px;}
+}
+.contact_info p{line-height: 35px;}
+/*
