@@ -286,7 +286,258 @@
 		</div>
 	<!--END Education -->
 	
+
+	<!-- START ACHIEVEMENTS -->
+		<section id="achievement" class="our_portfolio">
+			<div class="container">		
+				<div class="row portfolio-bg">
+					<h1 class="section-title">ACHIEVEMENTS</h1>
+					<ul class="portfolio-filters text-center">
+						<li class="filter active" data-filter="all">all</li>
+						<li class="filter" data-filter="graphic">Administrator</li>						
+						<li class="filter" data-filter="social">Security</li>
+					</ul>
+					<!-- END ACHIEVMENTS FILTER-->
+					<div class="grid">
+						<div class="col-xs-12 col-sm-6 col-md-4 mix social">						
+							<div class="box">
+								<img src="assets/img/certificate/operations.png" alt="">
+								<div class="box-content">
+									<h3 class="title">Security Operations Analyst (SC-200)</h3>
+									<a href="#" data-toggle="modal" data-target="#projectModal"><i class="fa fa-eye"></i></a>
+								</div>
+							</div>
+						</div><!--- END COL -->
+						<div class="col-xs-12 col-sm-6 col-md-4 mix graphic">						
+							<div class="box">
+								<img src="assets/img/certificate/administrator.png" alt="">
+								<div class="box-content">
+									<h3 class="title">Information Protection and Compliance Administrator Associate (SC-400)</h3>
+									<a href="#" data-toggle="modal" data-target="#projectModal2"><i class="fa fa-eye"></i></a>
+								</div>
+							</div>
+						</div><!--- END COL -->
+						<div class="col-xs-12 col-sm-6 col-md-4 mix social">						
+							<div class="box">
+								<img src="assets/img/certificate/compliance.png" alt="">
+								<div class="box-content">
+									<h3 class="title"> Security, Compliance and identity fundamentals (SC-900)</h3>
+									<a href="#" data-toggle="modal" data-target="#projectModal3"><i class="fa fa-eye"></i></a>
+								</div>
+							</div>
+						</div><!--- END COL -->
+						
+					</div><!--- END GRID -->
+					<div class="col-md-12">
+						<!-- Overlay Modal  -->
+						<div  tabindex="0" class="modal fade" id="projectModal">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title">Operations Analyst Overview</h4>
+									</div>
+									<div class="modal-body">
+										<img src="assets/img/certificate/operations.png" class="img-responsive" alt=""/>
+										<p>This certification is for professionals focusing on security operations, threat detection, and incident response using Microsoft Security tools.
+										<label>Key Topics Covered:</label>
+										<ul>
+											<li>Threat detection & response with Microsoft Defender XDR</li>
+											<li>Security analytics & monitoring using Microsoft Sentinel</li>
+											<li>Incident response strategies and automation techniques</li>
+											<li>Threat intelligence & investigation using Microsoft Defender for Endpoint, Microsoft Defender for Cloud</li>
+										</ul>
+										<label>Year: </label> 2024
+										
+								  </div>
+								</div><!-- /.modal-content -->
+							</div><!-- /.modal-dialog -->
+						</div><!-- /.modal -->
+						<!-- Overlay Modal  -->
+						<div  tabindex="0" class="modal fade" id="projectModal2">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title">Administrator Associate Overview</h4>
+									</div>
+									<div class="modal-body">
+										<img src="assets/img/certificate/administrator.png" class="img-responsive" alt=""/>
+										<p>This certification is for professionals responsible for managing data security, information governance, and compliance in Microsoft environments.</p>
+										</p><label>Key Topics Covered:</label> 
+										<ul>
+											<li>Data classification & sensitivity labels using Microsoft Purview Information Protection</li>
+											<li>Data loss prevention (DLP) policies to protect sensitive data</li>
+											<li>Regulatory compliance management with Microsoft Purview Compliance Manager</li>
+											<li>Insider risk management & audit logs for threat detection</i>
+										</ul>
+										<label>Year: </label> 2024
+								  </div>
+								</div><!-- /.modal-content -->
+							</div><!-- /.modal-dialog -->
+						</div><!-- /.modal -->
+						<!-- Overlay Modal  -->
+						<div  tabindex="0" class="modal fade" id="projectModal3">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title">Compliance and identity Overview</h4>
+									</div>
+									<div class="modal-body">
+										<img src="assets/img/certificate/compliance.png" class="img-responsive" alt=""/>
+										<p>This is an entry-level certification that introduces core security, compliance, and identity (SCI) concepts in Microsoft environments. It’s ideal for beginners or professionals looking to understand Microsoft’s security ecosystem.</p>
+										<label>Key Topics Covered:</label>
+										<ul>
+											<li>Security principles & methodologies</li>
+											<li>Microsoft Entra (Azure AD) and identity management</li>
+											<li>Compliance & governance solutions (Microsoft Purview, Compliance Manager)</li>
+											<li>Microsoft Defender & Security Center for threat protection</li>
+										</ul>
+										<label>Year: </label> 2024
+								  </div>
+								</div><!-- /.modal-content -->
+							</div><!-- /.modal-dialog -->
+						</div><!-- /.modal -->
+						
+					</div>						
+				</div><!-- END ROW-->
+			</div><!-- END CONTAINER-->
+		</section>
+	<!-- END ACHIEVMENTS -->
 	
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosipho's Portfolio Chatbot</title>
+    <style>
+        /* Chatbot Button Styling */
+        #chatbot-button {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #ff66b2;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 15px;
+            font-size: 20px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        #chatbox {
+            display: none;
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            width: 300px;
+            height: 400px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+
+        #chatbox-header {
+            background-color: #ff66b2;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        #chatbox-messages {
+            height: 270px;
+            overflow-y: auto;
+            margin-bottom: 10px;
+        }
+
+        #user-input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .message {
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .bot-message {
+            background-color: #d1ffd6;
+        }
+
+        .user-message {
+            background-color: #d1e0ff;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Chatbot Button -->
+    <button id="chatbot-button">💬</button>
+
+    <!-- Chatbox -->
+    <div id="chatbox">
+        <div id="chatbox-header">Chat with Nosipho</div>
+        <div id="chatbox-messages"></div>
+        <input type="text" id="user-input" placeholder="Type a message...">
+    </div>
+
+    <script>
+         Chatbot Toggle
+        const chatbotButton = document.getElementById('chatbot-button');
+        const chatbox = document.getElementById('chatbox');
+        const chatboxMessages = document.getElementById('chatbox-messages');
+        const userInput = document.getElementById('user-input');
+
+        chatbotButton.addEventListener('click', () => {
+            chatbox.style.display = chatbox.style.display === 'block' ? 'none' : 'block';
+        });
+
+        // Handle User Input
+        userInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' && userInput.value.trim() !== '') {
+                const userMessage = userInput.value;
+                displayMessage(userMessage, 'user');
+                userInput.value = '';
+
+                // Simple Bot Response
+                setTimeout(() => {
+                    const botResponse = getBotResponse(userMessage);
+                    displayMessage(botResponse, 'bot');
+                }, 1000);
+            }
+        });
+
+        // Display Message Function
+        function displayMessage(message, sender) {
+            const messageElement = document.createElement('div');
+            messageElement.classList.add('message', `${sender}-message`);
+            messageElement.textContent = message;
+            chatboxMessages.appendChild(messageElement);
+            chatboxMessages.scrollTop = chatboxMessages.scrollHeight;
+        }
+
+        // Simple Bot Response Logic
+        function getBotResponse(userMessage) {
+            const lowerMessage = userMessage.toLowerCase();
+            if (lowerMessage.includes('hello') || lowerMessage.includes('hi')) {
+                return "Hello! How can I help you today?";
+            } else if (lowerMessage.includes('who are you')) {
+                return "I'm Nosipho, a web developer. How can I assist you?";
+            } else if (lowerMessage.includes('portfolio')) {
+                return "You can check out my portfolio at www.nosipho.dev!";
+            } else {
+                return "Sorry, I didn't quite get that. Can you rephrase?";
+            }
+        }
+    </script>
+
 			
 
 </body>
