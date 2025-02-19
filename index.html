@@ -177,6 +177,7 @@
 			</div><!--- END CONTAINER -->
 		</div>
 		<!-- END ABOUT -->
+
 		
 <!--START EXPERIENCE -->
 		<div id="experience" class="service-area">
@@ -285,6 +286,7 @@
 		</div>
 	<!--END Education -->
 	
+
 	<!-- START ACHIEVEMENTS -->
 		<section id="achievement" class="our_portfolio">
 			<div class="container">		
@@ -403,6 +405,141 @@
 			</div><!-- END CONTAINER-->
 		</section>
 	<!-- END ACHIEVMENTS -->
+
+	
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosipho's Portfolio Chatbot</title>
+    <style>
+        /* Chatbot Button Styling */
+        #chatbot-button {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #ff66b2;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 15px;
+            font-size: 20px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        #chatbox {
+            display: none;
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            width: 300px;
+            height: 400px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+
+        #chatbox-header {
+            background-color: #ff66b2;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        #chatbox-messages {
+            height: 270px;
+            overflow-y: auto;
+            margin-bottom: 10px;
+        }
+
+        #user-input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .message {
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .bot-message {
+            background-color: #d1ffd6;
+        }
+
+        .user-message {
+            background-color: #d1e0ff;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Chatbot Button -->
+    <button id="chatbot-button">💬</button>
+
+    <!-- Chatbox -->
+    <div id="chatbox">
+        <div id="chatbox-header">Chat with Nosipho</div>
+        <div id="chatbox-messages"></div>
+        <input type="text" id="user-input" placeholder="Type a message...">
+    </div>
+
+    <script>
+         Chatbot Toggle
+        const chatbotButton = document.getElementById('chatbot-button');
+        const chatbox = document.getElementById('chatbox');
+        const chatboxMessages = document.getElementById('chatbox-messages');
+        const userInput = document.getElementById('user-input');
+
+        chatbotButton.addEventListener('click', () => {
+            chatbox.style.display = chatbox.style.display === 'block' ? 'none' : 'block';
+        });
+
+        // Handle User Input
+        userInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' && userInput.value.trim() !== '') {
+                const userMessage = userInput.value;
+                displayMessage(userMessage, 'user');
+                userInput.value = '';
+
+                // Simple Bot Response
+                setTimeout(() => {
+                    const botResponse = getBotResponse(userMessage);
+                    displayMessage(botResponse, 'bot');
+                }, 1000);
+            }
+        });
+
+        // Display Message Function
+        function displayMessage(message, sender) {
+            const messageElement = document.createElement('div');
+            messageElement.classList.add('message', `${sender}-message`);
+            messageElement.textContent = message;
+            chatboxMessages.appendChild(messageElement);
+            chatboxMessages.scrollTop = chatboxMessages.scrollHeight;
+        }
+
+        // Simple Bot Response Logic
+        function getBotResponse(userMessage) {
+            const lowerMessage = userMessage.toLowerCase();
+            if (lowerMessage.includes('hello') || lowerMessage.includes('hi')) {
+                return "Hello! How can I help you today?";
+            } else if (lowerMessage.includes('who are you')) {
+                return "I'm Nosipho, a web developer. How can I assist you?";
+            } else if (lowerMessage.includes('portfolio')) {
+                return "You can check out my portfolio at www.nosipho.dev!";
+            } else {
+                return "Sorry, I didn't quite get that. Can you rephrase?";
+            }
+        }
+    </script>
+
+
 			
 
 </body>

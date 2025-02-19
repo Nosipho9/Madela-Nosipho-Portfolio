@@ -137,6 +137,7 @@ color:#f75799;
 	background: #f75799;
 	border: 2px solid #f75799;	
 	color: #fff;
+
 	
 	.chatbot-container {
     width: 300px;
@@ -196,6 +197,7 @@ color:#f75799;
     align-self: flex-start;
     color: #333;
 }
+
 
 
 #achievement {
@@ -331,4 +333,5 @@ color:#f75799;
     color: #888;
     margin-top: 20px;
 }
+
 
