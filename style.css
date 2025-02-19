@@ -1,0 +1,783 @@
+.home_info{}
+.home_info_bg{
+	background:#fff;
+	margin-top:100px;
+	padding:50px;
+}
+.profile-pic{}
+
+@media only screen and (max-width:768px) { 
+.profile-pic img {width: 100%;}
+}
+.social_profile {
+	margin-top: 20px;
+}
+.social_profile ul{
+list-style: outside none none;
+margin: 0;
+padding: 0;
+text-align: center;
+}
+.social_profile ul li{
+display: inline-block;
+}
+@media only screen and (max-width:480px) { 
+.social_profile ul li{margin:2px;}
+}
+.social_profile ul li a img{width:60px;}
+.social_profile ul li a {
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	transition: all 0.3s ease 0s;
+	margin-right: 10px;
+	color: #333;
+	font-size: 16px;
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	border: 1px solid #eee;
+	border-radius: 30px;
+	transition: 0.3s;
+}
+@media only screen and (max-width:480px) { 
+.social_profile ul li a {margin-right:5px;}
+}
+@media only screen and (max-width:414px) { 
+.social_profile ul li a {width: 35px;height: 35px;line-height: 35px;}
+}
+.social_profile ul li a:hover{
+background:#f75799;
+color:#fff;
+border: 1px solid #f75799;
+}
+.name_title {
+	margin-bottom: 40px;
+	border-bottom: 1px solid #ddd;
+	padding-bottom:20px;
+}
+@media only screen and (max-width:768px) { 
+.name_title {margin-top: 60px;}
+}
+.name_title h1{}
+@media only screen and (max-width:414px) { 
+.name_title h1 {font-size:30px; }
+}
+.name_title h1 span{
+font-weight:700;	
+color:#f75799;
+}
+.name_title h4{margin-bottom:0px;}
+
+
+.info_title {
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 16px;
+}
+.info_title::after {
+	content: "";
+	background: #f75799;
+	height: 2px;
+	width: 45px;
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+
+.basic-info{}
+.basic-info table tr th {
+	color: #333;
+	font-family: montserrat,sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 35px;
+	text-transform: uppercase;
+}
+.contact_info{margin-top:130px;}
+@media only screen and (max-width:480px) { 
+.basic-info table tr {
+	margin-bottom: 10px;
+	display: inline-block;
+}
+.contact_info{margin-top:50px;}
+}
+.basic-info table tr th{width:120px;}
+}
+
+@media only screen and (max-width:768px) { 
+.contact_info{margin-top:60px;}
+}
+.contact_info p{line-height: 35px;}
+
+
+
+.about-me{}
+.about-bg{margin: 60px 0;background:#fff;padding:50px;}
+@media only screen and (max-width:768px) { 
+.about-info{margin-bottom:60px;}
+}
+.about-info p {
+	margin-bottom: 30px;
+	padding-right: 30px;
+}
+.about-info a {2s;
+	color: #333;
+	background: #fff;
+	border: 2px solid #333;
+	padding: 10px 30px;
+	display: inline-block;
+	border-radius: 30px;
+	transition: 0.
+	font-weight: 400;
+	text-transform: capitalize;
+}
+.about-info a i{margin-left:5px;}
+.about-info a:hover{
+	background: #f75799;
+	border: 2px solid #f75799;	
+	color: #fff;
+	
+	.chatbot-container {
+    width: 300px;
+    height: 450px;
+    background-color: #FFC0CB; /* Pink background */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Chatbot Header */
+.chatbot-header {
+    background-color: #FF69B4; 
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.chatbot-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    max-height: 300px;
+}
+
+.chat-bubble {
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    max-width: 70%;
+}
+
+
+.chat-bubble.user {
+    background-color: #FFB6C1; 
+    align-self: flex-end;
+    color: #333;
+}
+
+
+.chat-bubble.bot {
+    background-color: #F0F0F0; 
+    align-self: flex-start;
+    color: #333;
+}
+
+
+#achievement {
+    background-color: #f9f9f9; 
+    padding: 60px 0;
+    text-align: center;
+}
+
+
+#achievement .section-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+
+.portfolio-filters {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.portfolio-filters li {
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #888;
+    cursor: pointer;
+}
+
+.portfolio-filters li.active {
+    color: #FF69B4; 
+}
+
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+
+.box {
+    width: 100%;
+    max-width: 320px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+    transform: translateY(-10px); 
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.box-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.box-content .title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+
+.modal-dialog {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.modal-header {
+    background-color: #FF69B4; /* Pink background for modal header */
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+.modal-header .close {
+    color: white;
+    font-size: 30px;
+    opacity: 1;
+}
+
+.modal-body {
+    padding: 30px;
+    font-size: 16px;
+    color: #333;
+}
+
+.modal-body img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+
+.modal-body ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.modal-body ul li {
+    margin: 5px 0;
+}
+
+.modal-body label {
+    font-weight: bold;
+    color: #FF69B4;
+}
+
+
+.modal-footer {
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+    margin-top: 20px;
+}
+
+Here is the CSS code for styling the Education section you've provided. This CSS will give it a modern, clean look with a timeline structure for both Higher Education and Basic Education.
+
+css
+Copy
+
+#education {
+    background-color: #f5f5f5; 
+    padding: 60px 0;
+    text-align: center;
+}
+
+
+#education .section-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+
+.timeline-area {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+
+.timeline-bg {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.timeline_title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FF69B4; 
+    margin-bottom: 20px;
+}
+
+
+.single_timeline {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.single_timeline h4 {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.active_year,
+.active_company {
+    font-size: 16px;
+    color: #888;
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+}
+
+
+.single_timeline ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.single_timeline ul li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+
+.single_timeline strong {
+    font-size: 16px;
+    color: #FF69B4; 
+}
+
+
+.col-md-6 {
+    margin-bottom: 30px;
+}
+
+
+@media (max-width: 768px) {
+    .col-md-6 {
+        width: 100%; 
+    }
+}
+
+#experience {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+#experience .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#experience .section-title {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+/* Service Area Background */
+.service-bg {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.single_service {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.single_service h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #005f73;
+}
+
+.single_service p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.single_service strong {
+  color: #333;
+}
+
+.single_service ul {
+  list-style: inside;
+  margin-top: 10px;
+  color: #555;
+}
+
+.single_service ul li {
+  margin-bottom: 10px;
+}
+
+.single_service a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.single_service a:hover {
+  text-decoration: underline;
+}
+
+/* Icons styling */
+.single_service span {
+  font-size: 40px;
+  color: #009688;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .service-bg {
+    padding: 20px;
+  }
+
+  .single_service {
+    padding: 15px;
+  }
+
+  .section-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .single_service h3 {
+    font-size: 20px;
+  }
+
+  .single_service p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  .single_service h3 {
+    font-size: 18px;
+  }
+
+  .single_service p {
+    font-size: 12px;
+  }
+}
+
+/* General Styles for the Home Section */
+#home {
+  padding: 60px 0;
+  background-color: #f4f4f4;
+}
+
+#home .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#home .home_info_bg {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Picture */
+.profile-pic {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile-pic img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #009688;
+}
+
+/* Social Profile Links */
+.social_profile {
+  text-align: center;
+}
+
+.social_profile ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social_profile ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social_profile ul li a {
+  font-size: 30px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.social_profile ul li a:hover {
+  color: #009688;
+}
+
+/* Name and Title */
+.name_title h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.name_title h1 span {
+  color: #009688;
+}
+
+.name_title h4 {
+  font-size: 22px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Basic Info */
+.basic-info {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.basic-info .info_title {
+  font-size: 22px;
+  color: #009688;
+  margin-bottom: 20px;
+}
+
+.basic-info table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.basic-info table th,
+.basic-info table td {
+  padding: 10px;
+  font-size: 16px;
+  color: #555;
+  text-align: left;
+}
+
+.basic-info table th {
+  width: 40%;
+  font-weight: bold;
+  color: #333;
+}
+
+.basic-info table td {
+  width: 60%;
+}
+
+/* Contact Info */
+.contact_info {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact_info .info_title {
+  font-size: 22px;
+  color: #009688;
+  margin-bottom: 20px;
+}
+
+.contact_info table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.contact_info table th,
+.contact_info table td {
+  padding: 10px;
+  font-size: 16px;
+  color: #555;
+  text-align: left;
+}
+
+.contact_info table th {
+  width: 40%;
+  font-weight: bold;
+  color: #333;
+}
+
+.contact_info table td {
+  width: 60%;
+}
+
+.contact_info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact_info a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 992px) {
+  #home .home_info_bg {
+    padding: 20px;
+  }
+
+  .profile-pic img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .name_title h1 {
+    font-size: 28px;
+  }
+
+  .name_title h4 {
+    font-size: 20px;
+  }
+
+  .basic-info .info_title,
+  .contact_info .info_title {
+    font-size: 20px;
+  }
+
+  .basic-info table th,
+  .basic-info table td,
+  .contact_info table th,
+  .contact_info table td {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  #home .home_info_bg {
+    padding: 15px;
+  }
+
+  .col-md-4,
+  .col-md-5,
+  .col-md-3 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .profile-pic img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .name_title h1 {
+    font-size: 24px;
+  }
+
+  .name_title h4 {
+    font-size: 18px;
+  }
+
+  .basic-info table th,
+  .basic-info table td,
+  .contact_info table th,
+  .contact_info table td {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .social_profile ul li {
+    margin-right: 5px;
+  }
+
+  .social_profile ul li a {
+    font-size: 24px;
+  }
+}
