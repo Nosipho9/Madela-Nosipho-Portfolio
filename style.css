@@ -137,6 +137,7 @@ color:#f75799;
 	background: #f75799;
 	border: 2px solid #f75799;	
 	color: #fff;
+
 	
 	.chatbot-container {
     width: 300px;
@@ -196,6 +197,7 @@ color:#f75799;
     align-self: flex-start;
     color: #333;
 }
+
 
 
 #achievement {
@@ -332,10 +334,6 @@ color:#f75799;
     margin-top: 20px;
 }
 
-Here is the CSS code for styling the Education section you've provided. This CSS will give it a modern, clean look with a timeline structure for both Higher Education and Basic Education.
-
-css
-Copy
 
 #education {
     background-color: #f5f5f5; 
@@ -431,4 +429,5 @@ Copy
         width: 100%; 
     }
 }
+
 
